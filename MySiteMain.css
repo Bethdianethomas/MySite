@@ -1,0 +1,63 @@
+
+.page-header{
+	background-image: url("http://andyaustinphoto.com/img/s/v-3/p1499015372-5.jpg");
+	height: 300px;
+	width: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+#MontanaCodeSchoolLine{
+	margin-bottom: 50px;
+}
+#firstRow{
+	height: 300px;
+	width: 1000px;
+}
+#mySite {
+	background-color: LightBlue;
+}
+#Ride{
+	height: 300px;
+	width: 300px;
+}
+#Flag{
+	height: 300px;
+	width: 700px;
+	vertical-align: center;
+}
+
+#bigBird {
+	float: left;
+}
+#topLeftPic {
+	margin-left: 15px;
+}
+
+#secondRow {
+	margin-top: 50px;
+
+}
+
+#secondColumn {
+	text-align: center;
+	padding-left: 100px;
+
+}
+
+#codeSchoolHeading {
+	text-align: center;
+	text-decoration: underline;
+	font-family: Impact;
+	font-size: 65px;
+	margin: 50px auto auto auto;
+	
+	
+}
+
+#footer {
+	margin: 50px;
+	text-align: center;
+}
