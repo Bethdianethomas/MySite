@@ -1,13 +1,35 @@
+#mySite {
+	background-color: black;
+}
 
-.page-header{
+.navbar-default {
+  background-color: black;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+
+.jumbotron {
 	background-image: url("http://andyaustinphoto.com/img/s/v-3/p1499015372-5.jpg");
-	height: 300px;
-	width: 100%;
 	background-repeat: no-repeat;
+	background-position: center;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: black;
 
+
+h1{
+	margin: 50px 50px 50px 50px;
+}
+
+#leftFirstContent{
+	background-color: #FF5050;
+	background-size: 80px 60px;
+}
+
+}
+#Montana{
+	color: #f8f8ff; 
 }
 #MontanaCodeSchoolLine{
 	margin-bottom: 50px;
@@ -16,9 +38,7 @@
 	height: 300px;
 	width: 1000px;
 }
-#mySite {
-	background-color: LightBlue;
-}
+
 #Ride{
 	height: 300px;
 	width: 300px;
@@ -61,3 +81,5 @@
 	margin: 50px;
 	text-align: center;
 }
+
+
