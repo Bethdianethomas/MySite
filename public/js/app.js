@@ -55,4 +55,4 @@ var BlogBox = React.createClass({
     }
 });
 
-React.render(<BlogBox url="/api/blog"/>, document.getElementById('blogList'));
+React.render(<BlogBox url="/api/blogs"/>, document.getElementById('blogList'));
