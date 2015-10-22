@@ -22,10 +22,9 @@ var BlogBox = React.createClass({
       return {data: []};
     },
 
-    loadTweetsFromServer: function() {
-      var handle="BethDianeThomas"
+    loadBlogsFromServer: function() {
       $.ajax({
-        url: this.props.url + handle,
+        url: this.props.url,
         dataType: 'json',
         cache: false,
         success: function(data) {
@@ -40,7 +39,7 @@ var BlogBox = React.createClass({
   },
 
   componentDidMount: function(){
-    this.loadTweetsFromServer();
+    this.loadBlogsFromServer();
   },
 
   
@@ -49,11 +48,11 @@ var BlogBox = React.createClass({
         return (
         <div>
             <ul>
-              <TweetList data={this.state.data}/>
+              <BlogList data={this.state.data}/>
             </ul>
         </div>
           );
     }
 });
 
-React.render(<TweetBox url="/api/handle/"/>, document.body);
+React.render(<BlogBox url="/api/blog"/>, document.getElementById('blogList'));
