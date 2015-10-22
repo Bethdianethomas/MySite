@@ -1,13 +1,15 @@
 var BlogList = React.createClass({
     render: function() {
       
-      var blogData = this.props.data.map(function(item){
-        return <li> {blog.title} </li>
+      var blogData = this.props.data.map(function(blog){
+        return (<li> {blog.title} </li>
+                <li> {blog.body} </li>
+                );
       });
 
         return (
         <div>
-          <h1> Header </h1>
+          <h1> </h1>
             <ul>
               {blogData}
             </ul>
