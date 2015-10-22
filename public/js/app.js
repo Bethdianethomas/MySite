@@ -2,8 +2,8 @@ var BlogList = React.createClass({
     render: function() {
       
       var blogData = this.props.data.map(function(blog){
-        return (<li> {blog.title} </li>
-                <li> {blog.body} </li>
+        return (<li><p> {blog.title} </p>
+                 <p>{blog.body} </p></li>
                 );
       });
 
