@@ -4,7 +4,7 @@ var BlogList = React.createClass({
       var blogData = this.props.data.map(function(blog){
         return (
         <div>
-          <div className="container-fluid" id="vendorTable">
+          <div className="container-fluid" id="blogTable">
             <div className="media col-md-3 col-sm-4 col-xs-6">
               <a className="thumbnail" id="farmStand">
                 <img src={blog.img}/>
