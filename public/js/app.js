@@ -2,10 +2,19 @@ var BlogList = React.createClass({
     render: function() {
       
       var blogData = this.props.data.map(function(blog){
-        return (<li><p> {blog.title} </p>
-                 <p>{blog.body} </p></li>
-                );
-      });
+        return (
+        <div>
+          <div className="container-fluid" id="vendorTable">
+            <div className="media col-md-3 col-sm-4 col-xs-6">
+              <a className="thumbnail" id="farmStand">
+                <img src={blog.img}/>
+              </a>
+            </div>
+          </div>
+        </div>
+      )
+    });
+        
 
         return (
         <div>
@@ -57,25 +66,25 @@ var BlogBox = React.createClass({
     }
 });
 
-var BlogList = React.createClass({
-    render: function() {
+// var BlogList = React.createClass({
+//     render: function() {
       
-      var blogData = this.props.data.map(function(blog){
-        return (<li><p> {blog.title} </p>
-                 <p>{blog.body} </p></li>
-                );
-      });
+//       var blogData = this.props.data.map(function(blog){
+//         return (<li><p> {blog.title} </p>
+//                  <p>{blog.body} </p></li>
+//                 );
+//       });
 
-        return (
-        <div>
-          <h1> </h1>
-            <ul>
-              {blogData}
-            </ul>
-        </div>
-          );
-    }
-});
+//         return (
+//         <div>
+//           <h1> </h1>
+//             <ul>
+//               {blogData}
+//             </ul>
+//         </div>
+//           );
+//     }
+// });
 
 
 

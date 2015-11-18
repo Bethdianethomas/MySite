@@ -1,24 +1,40 @@
-#mySite {
-    background-color: #FFE21C;
+.mySite {
+    background-color: black;
 }
 .col-md-12 {
-	background-color: #FFFFFF;
-	height: 10px;
+	/*background-color: #FFFFFF;*/
+	height: 5px;
+	background-color: #white;
 }
 .row{
 	background-position: center;
 }
 #javaStreetPic {
 	background: url(JavaStreetNew.png);
-	height: 475px;
+	height: 460px;
 	width: 460px;
+	margin-top: 0;
 }
 
 #pageHeader {
-	margin-top: 90px;
+	margin-top: 50px;
 	margin-bottom: 20px;
+	background-color: #FFE700;
+	height: 525px;
+}
+#jumboLines{
+	margin-top: 15px;
+	color: black;
+	text-align: right;
+}
+#drinkCoffee {
+	font-size: 34px;
+	font-weight: bold;
 }
 
+#blogList{
+	margin-top: 100px;
+}
 #blogAdded{
 	margin-top: 150px;
 	background-color: black;
@@ -31,6 +47,10 @@
 	color: white;
 	padding-right: 20px;
 	padding-top: 10px;
+	font-size: 24px;
+}
+#blogInfo{
+	color: white;
 }
 #blogNav{
 	background-color: #000000;
@@ -66,8 +86,9 @@ div#try {
   background-repeat: no-repeat;
  }
 
-#bioButton {
+.navButton {
 	background-color: black;
+	color: white;
 	margin-right: 10px;
 	width: 100px;
 }
@@ -75,50 +96,20 @@ div#try {
 #searchButton {
 	margin-top: 10px;
 }
-.jumbotron {
-	background-repeat: no-repeat;
-	background-position: center;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: black;
 
+#addBlog{
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 15px 15px;
+}
 
 h1{
 	margin: 50px 50px 50px 50px;
 }
 
-
-
 #leftFirstContent{
 	background-color: #FF5050;
 	background-size: 80px 60px;
-}
-
-}
-#Montana{
-	color: #f8f8ff;
-	font-size: 40px;
-}
-#MontanaCodeSchoolLine{
-	margin-bottom: 50px;
-}
-
-#Ride{
-	height: 300px;
-	width: 300px;
-}
-#Flag{
-	height: 300px;
-	width: 700px;
-	vertical-align: center;
-}
-
-#bigBird {
-	float: left;
-}
-#topLeftPic {
-	margin-left: 15px;
 }
 
 #secondRow {
@@ -129,13 +120,12 @@ h1{
 #secondColumn {
 	text-align: center;
 	padding-left: 100px;
-
 }
-
 
 #footer {
 	margin: 50px;
-	text-align: center;
+	text-align: right;
+	color: white;
 }
 
 #bioButton{
