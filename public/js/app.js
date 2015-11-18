@@ -1,13 +1,15 @@
 var BlogList = React.createClass({
     render: function() {
       
-      var blogData = this.props.data.map(function(item){
-        return <li> {blog.title} </li>
+      var blogData = this.props.data.map(function(blog){
+        return (<li><p> {blog.title} </p>
+                 <p>{blog.body} </p></li>
+                );
       });
 
         return (
         <div>
-          <h1> Header </h1>
+          <h1> </h1>
             <ul>
               {blogData}
             </ul>
@@ -22,10 +24,9 @@ var BlogBox = React.createClass({
       return {data: []};
     },
 
-    loadTweetsFromServer: function() {
-      var handle="BethDianeThomas"
+    loadBlogsFromServer: function() {
       $.ajax({
-        url: this.props.url + handle,
+        url: this.props.url,
         dataType: 'json',
         cache: false,
         success: function(data) {
@@ -40,7 +41,7 @@ var BlogBox = React.createClass({
   },
 
   componentDidMount: function(){
-    this.loadTweetsFromServer();
+    this.loadBlogsFromServer();
   },
 
   
@@ -49,11 +50,33 @@ var BlogBox = React.createClass({
         return (
         <div>
             <ul>
-              <TweetList data={this.state.data}/>
+              <BlogList data={this.state.data}/>
             </ul>
         </div>
           );
     }
 });
 
-React.render(<TweetBox url="/api/handle/"/>, document.body);
+var BlogList = React.createClass({
+    render: function() {
+      
+      var blogData = this.props.data.map(function(blog){
+        return (<li><p> {blog.title} </p>
+                 <p>{blog.body} </p></li>
+                );
+      });
+
+        return (
+        <div>
+          <h1> </h1>
+            <ul>
+              {blogData}
+            </ul>
+        </div>
+          );
+    }
+});
+
+
+
+React.render(<BlogBox url="/api/blogs"/>, document.getElementById('blogList'));

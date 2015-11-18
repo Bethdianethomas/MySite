@@ -19,6 +19,19 @@
 	margin-bottom: 20px;
 }
 
+#blogAdded{
+	margin-top: 150px;
+	background-color: black;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#legend {
+	color: white;
+	padding-right: 20px;
+	padding-top: 10px;
+}
 #blogNav{
 	background-color: #000000;
 	height: 475px;
@@ -55,6 +68,8 @@ div#try {
 
 #bioButton {
 	background-color: black;
+	margin-right: 10px;
+	width: 100px;
 }
 
 #searchButton {
