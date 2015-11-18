@@ -57,4 +57,26 @@ var BlogBox = React.createClass({
     }
 });
 
+var BlogList = React.createClass({
+    render: function() {
+      
+      var blogData = this.props.data.map(function(blog){
+        return (<li><p> {blog.title} </p>
+                 <p>{blog.body} </p></li>
+                );
+      });
+
+        return (
+        <div>
+          <h1> </h1>
+            <ul>
+              {blogData}
+            </ul>
+        </div>
+          );
+    }
+});
+
+
+
 React.render(<BlogBox url="/api/blogs"/>, document.getElementById('blogList'));

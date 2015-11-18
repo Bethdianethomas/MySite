@@ -41,7 +41,7 @@ router.route('/')
        res.send("houston we have a problem")
      } else{
        console.log("New blog named " + blog + "created!");
-       res.redirect('/blog.html');
+       res.send(blog);
      }
    });
  });
