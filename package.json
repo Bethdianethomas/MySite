@@ -4,20 +4,20 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-   "clean": "rimraf static",
+    "clean": "rimraf static",
     "start": "node server.js",       
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
     "build": "npm run clean && npm run build:webpack",
-    "start": "node server.js",
     "lint": "eslint client server || true"
   },
  
 
   "author": "Beth Thomas",
   "dependencies": {
-    "bcrypt-nodejs" : "latest",
+    "axios": "^0.7.0",
+    "bcrypt-nodejs": "latest",
     "body-parser": "^1.14.1",
-    "connect-flash" : "^0.1.1",
+    "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.0",
     "ejs": "2.3.3",
     "express": "^4.13.3",
@@ -26,13 +26,14 @@
     "mongodb-uri": "^0.9.7",
     "mongoose": "^4.1.11",
     "morgan": "^1.6.1",
-    "passport" : "^0.3.0",
-    "passport-local" : "^1.0.0"
+    "passport": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "react": "^0.14.3"
   },
   "engines": {
     "node": "0.12.7"
   },
-  
+
   "devDependencies": {
     "babel-core": "^5.4.7",
     "babel-eslint": "^3.1.9",
