@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var db = require('./model/db');
 var blogModel = require('./model/blog');
 var blogRoutes = require('./routes/blog');
+var githubRoutes = require('./routes/github');
 var passport = require('passport');
 var flash    = require('connect-flash');
 var morgan       = require('morgan');
@@ -35,6 +36,7 @@ app.use(express.static('public'));
 
 require('./routes/userRoutes.js')(app, passport);
 app.use('/api/blogs', blogRoutes);
+app.use('/api/github', githubRoutes);
 
 app.get('/', function(req, res){
     res.readFile('index.html');
