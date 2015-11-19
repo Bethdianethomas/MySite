@@ -16,6 +16,25 @@
 	margin-top: 0;
 }
 
+.jumbotron {
+	height: 350px;
+	width: 100%;
+	margin-top: 100px;
+
+}
+
+#profilePic {
+	height: 250px;
+	width: 250px;
+	margin-left: 50px;
+}
+
+#profileInfo{
+	color: white;
+}
+.form-control{
+	background-color: white;
+}
 #pageHeader {
 	margin-top: 50px;
 	margin-bottom: 20px;
@@ -53,22 +72,23 @@
 	color: white;
 }
 #blogTable{
-  height: 25%;
-  width: 100%;
-  border: 5px solid white;
+  height: 30%;
+  width: 80%;
+  border: 5px solid #696969;
   border-radius: 5px;
-  float: left;
   margin-bottom: 25px;
+  vertical-align: center;
   margin-top: 20px;
-  background-color: #641511;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
+  background-color: white;
 }
   }
 #blogNav{
 	background-color: #000000;
 	height: 475px;
 	width: 332px;
+}
+#blogBody{
+	margin-bottom: 15px;
 }
 div#try {
 	background-color: #000000;	
@@ -139,6 +159,13 @@ h1{
 	margin: 50px;
 	text-align: right;
 	color: white;
+}
+
+#loginForm{
+	border: 2px solid white;
+	padding: 25px;
+	border-radius: 5px;
+
 }
 
 #bioButton{
