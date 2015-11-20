@@ -6,11 +6,9 @@ var BlogList = React.createClass({
         <div>
           <div className="container-fluid" id="blogTable">
             <div className="media col-md-3 col-sm-4 col-xs-6">
-              <a className="thumbnail" id="farmStand">
-                <img src={blog.img}/>
-              </a>
               <p>{blog.title}</p>
               <p>{blog.body}</p>
+              <p>{blog.comments}</p>
             </div>
           </div>
         </div>

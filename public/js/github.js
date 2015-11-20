@@ -4,7 +4,7 @@ var Github = React.createClass({
 		return (
 			<div className="col-md-4">
 				<h3 id="repo"> Repo Name </h3>
-				<p>{commits.id}</p>
+				<p>{commits.repo}</p>
 			</div>
 			)
 		});
@@ -30,7 +30,7 @@ var GitBox = React.createClass({
 			dataType: 'json',
 			success: function(data){
 				console.log(data),
-				this.setState({ data.data })
+				this.setState({ data:data })
 			}.bind(this), 
 			error: function(err){
 				console.log('you done messed up boy')

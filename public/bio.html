@@ -8,9 +8,8 @@
 
 <body class="mySite">
 
-<!-- ****************************  NAVIGATION **************************** -->
 
-<nav class="navbar navbar-default navbar-fixed-top" style="border-bottom: 2px solid #696969;">
+<nav class="navbar navbar-default navbar-fixed-top" style="border-bottom: none;">
   <div class="container-fluid" style="border-style: none;">
     <div class="navbar-header" style="border-style: none;">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -20,10 +19,11 @@
     </div>
 
         <ul class="nav navbar-nav navbar-right" style="margin-right: 50px; border-style: none;">
-          <li><a style="width: 100px;" href="/blog" id="bioButton">Blogs</a>
+          <li><a style="width: 100px; text-align: center;" href="/blog" id="bioButton">Blogs</a>
           </li>
-        <ul class="nav navbar-nav navbar-right" style="border-style: none;">
-          <li><a style="width: 100px;" href="/login" id="bioButton">Log-In</a>
+          <li><a style="width: 100px; text-align: center;" href="/bio.html" id="bioButton">Bio</a>
+          </li>
+          <li><a style="width: 100px; text-align: center;" href="/login" id="bioButton">Sign In</a>
         </li>
         </ul>
     </div>
@@ -31,20 +31,135 @@
 
 <!-- ****************************** START CONTENT ****************************** -->
 <div class="jumbotron" id="profileDiv">
-    <img src="" alt="Profile Pic" id="profilePic">
+    <div class="col-md-3">
+    <img src="linkedin.jpg" alt="Profile Pic" id="profilePic">
+    </div>
+    <div class="col-md-9" id="profileInfo">
+      <h2 style="margin-top=0;">Beth Thomas</h2>
+      <h4>Junior Web Developer</h4>
+      <h4>Bozeman, MT</h4>
+    </div>
 </div>
 
-  <div class= "col-md-8" id="profileInfo">
-    <h2 style="padding-top: 0;">Beth Thomas</h2>
-    <!-- <h3>Junior Web Developer</h3> -->
-    <h4>Bozeman, MT</h4>
+
+
+<div class="container-fluid" id="experience">
+  <div class="col-md-6" style="margin: auto;">
+    <div class="container-fluid projectsEducation"> 
+      <h2 style="font-weight:bold;">PROJECTS</h2>
+        <h4> Github: </h4>
+          <ul>
+           <li>https://github.com/Bethdianethomas</li>
+         </ul>
+       <h4> CrispR - Farmer's Market Web App Concept (Group Project):</h4>
+         <ul>
+          <li>https://github.com/Bethdianethomas</li>
+        </ul>
+       <h4> Code School Blog:</h4>
+         <ul>
+          <li>https://bethdianethomasblog.herokuapp.com/</li>
+         </ul>
+        <h4> Recruitly - Recruiting Web App Concept:</h4>
+         <ul>
+          <li>https://recruitly.herokuapp.com/</li>
+        </ul>
+      </div>
+  </div>
+  <div class="col-md-6" style="margin: auto;">
+    <div class="container-fluid projectsEducation">
+      <h2 style="font-weight:bold;">EDUCATION</h2>
+      <h3>Montana Code School</h3>
+      <h4>Missoula, MT // September 2015 - Present</h4>
+        <ul>
+          <li>Full Stack Web Development Coding Bootcamp</li>
+          <li>Curriculum includes: Javascript, Node.js, React.js, HTML/CSS, Git, SQL & No-SQL Databases, Agile/Learn Methodologies</li>
+        </ul>
+      <h3 style="font-weight:bold;">Codecademy.com</h3>
+        <h4>September 2015 - Present</h4>
+          <p>Courses Completed:</p>
+            <ul style="list-style-type:disc">
+              <li></li>
+            </ul>
+      <h3 style="font-weight:bold;">Codeschool.com</h3>
+        <h4>September 2015 - Present</h4>
+          <p>Courses Completed:</p>
+            <ul style="list-style-type:disc">
+              <li></li>
+            </ul>
+      <h3 style="font-weight:bold;">North Seattle College</h3>
+        <h4>Seattle, WA // September 2008 - August 2009</h4>
+          <ul>
+            <li> Pre-Physical Therapy / Pre-Med Studies </li>
+          </ul>
+      <h3 style="font-weight:bold;">University of Washington</h3>
+        <h4>Seattle, WA // September 2003 - June 2007</h4>
+          <ul>
+            <li style="margin-bottom: 25px;"> B.A. Communications</li>
+          </ul>
+    </div>
   </div>
 
+  <div <div class="col-md-12" style="margin: auto;">
+     <div class="container-fluid projectsEducation">
+    <h2 style="font-weight:bold;">EXPERIENCE</h2>
+      <h3>UrbanQuake Consulting LLC</h3>
+      <h4>Owner/Consultant // Bozeman, MT // October 2014 - Present</h4>
+      
+      <p>Accomplishments:</p> 
+        <ul>
+          <li>Prospect/develop target lists and cold outreach based on client’s target markets </li>
+          <li>Market research analysis and feedback to ensure business/licensing models are competitive in the marketplace </li>
+          <li>Closed licensing deals ranging from $3k to $70k USD on a global scale</li>
+          <li>Developed custom email marketing materials and campaigns; tuning message and highlighted product features based on intended recipient</li>
+          <li>Set up Product Feedback process to align customer requirements with product roadmap</li>
+          <li>Developed Business Operations best practices for contracts creation and delivery, product delivery, invoice management, prospect and customer communication documentation</li>
+          <li>Implemented new full-cycle Lead-to-Close Sales Process and documented best practices</li>
+          <li>Led business requirements gathering for migrating from proprietary CRM system to standard 3rd party system</li>
+          <li>Planned company participation in and attended industry conferences on a national and international basis on behalf of clients</li>
+        </ul>
+      <h3 style="font-weight:bold;">Swrve</h3>
+        <h4>Global Account and Renewals Manager // San Francisco, CA // July 2013 - September 2014</h4>
+        
+          <p>Mobile Analytics, AB Testing and Marketing Automation Software Start-up</p>
+              <ul style="list-style-type:disc">
+                <li>As Swrve’s inaugural AM, developed end-to-end account management, contract management and renewals processes tailored for each tier of customer (enterprise through 2-man dev shops)</li>
+                <li>Closed largest grossing contract in Swrve history - $20k Monthly Recurring Revenue (MRR) w/ total contract value of $480k</li>
+                <li>Generated additional $29k in MRR ($354k per year) in upsells for existing accounts including Warner Bros., Activision and Sony Pictures</li>
+                <li>Created Global Referral Program, Executive Sponsor Program & Weekly Tier 1 Account report</li>
+                <li>Cross-functional point of contact linking our Customer Success, Engineering, Sales/Marketing and Product teams to our customers to ensure customer satisfaction and maximize product usage</li>
+                <li>Co-developed best practices for Swrve SDK integration, client on-boarding processes and user documentation</li>
+                <li>Developed and implemented on-boarding processes for all new Customer Success employees covering customer on-boarding, SDK integration process, Swrve dashboard, and internal proprietary/3rd party systems best practices </li>
+                <li>Mentored our Sales Development Representatives - specifically how to sell into and work within the Games industry</li>
+              </ul>
+      <h3 style="font-weight:bold;">Unity Technologies</h3>
+        <h4>Brighton, UK // Account Executive - Europe and India // January 2012 - July 2014</h4>
+        <h4>San Francisco, CA // Account Executive - Midwest and Canada // January 2011 - January 2012</h4>
+          <p>Real-Time 3D Software Start-Up for Creating Cross-Platform Games and Applications</p>
+            <ul style="list-style-type:disc">
+              <li>Top producer 2011, 2012, and to July 2013 for the Inside Sales Team</li>
+              <li>Sold 117% of quota for 2011, 140% of quota for 2012 and 160% of quota for Jan 2013 through June 30 2013</li>
+              <li>Developed and managed Global Student and Educational Licensing Program via partnering with Educational Reseller, Studica, netting $1M+ in revenue to date from inception (on target for $1.2M USD in 2013)</li>
+              <li>Created on-boarding process for new sales employees for Salesforce, internal CRM and licensing systems, top-level product knowledge, best practices for selling to net new customers and farming existing customer accounts</li>
+              <li>Designated “team expert” on 3rd party CRM and proprietary licensing systems</li>
+              <li>Planned and led Unity’s involvement in Game Development events on a global scale</li>
+            </ul>
+      <h3 style="font-weight:bold;">Volt Technical Resources</h3>
+        <h4>Business Development Manager - Technology // San Francisco, Ca // February 2010 - January 2011</h4>
+        
+        <p>Start Up Group Within a Global IT Consulting Firm</p>
+          <ul>
+            <li>Led Volt’s new retail business initiative for the Technical vertical in San Francisco and the East Bay</li>
+            <li>Generated 85 orders from 16 net new accounts including Electronic Arts, Mckesson, Blue Shield/Blue Cross (all verticals/national account), LeapFrog, Art.com, Akamai, Sephora.com (IT division), Autodesk, Marketo, Responsys, and ConnectSolutions</li> 
+          </ul>
+      </div>
+  </div>
+</div>
 
-<div>
+
+<div id="github">
   <h3 style="color: white; margin-top: 100px;"> Code Zone </h3>
-  <div id="githubData" style="color: white;">
-  </div>
+    <div id="githubData" style="color: white;">
+    </div>
 </div>
 
 

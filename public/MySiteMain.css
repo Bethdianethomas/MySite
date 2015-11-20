@@ -20,7 +20,11 @@
 	height: 350px;
 	width: 100%;
 	margin-top: 100px;
+}
 
+#profileDiv{
+	background-color: #FFE700;
+	margin-top: 70px;
 }
 
 #profilePic {
@@ -29,9 +33,31 @@
 	margin-left: 50px;
 }
 
+
 #profileInfo{
-	color: white;
+	color: black;
+	padding-top: 0;
+	margin-top: 0;
 }
+
+#experience{
+	height: 2000px;
+	width: 100%;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+}
+
+#github{
+	margin-top: 50px;
+}
+.projectsEducation{
+	background-color: white;
+	padding: 25px 25px;
+	margin: 25px 25px;
+	border: 5px solid #FFE700;
+	border-radius: 10px;
+}
+
 .form-control{
 	background-color: white;
 }
