@@ -37,19 +37,25 @@
     <div class="page-header text-center" style="background-color: white;">
         <h1 style="color: black; padding-top: 20px;">Profile Page</h1>
     </div>
+    
+    <div style="text-align: center;">
+    <a href="/add" class="btn btn-default btn-lg" style="margin: 50px 25px;">Add Blog</a>
+    </div>
 
     <div class="row">
 
         <!-- LOCAL INFORMATION -->
         <div class="col-sm-12" style="margin-bottom: 25px; border: 1px solid white;">
-            <!-- <div class="well"> -->
+          <div class="pull-right" style="text-align: right;">
+
                 <h3 style="color:white;"><span class="fa fa-user"></span>You are logged in as:</h3>
                     <p style="color:white;">
                         <!-- <strong>id</strong>: <%= user._id %><br> -->
                         <strong>email</strong>: <%= user.local.email %><br>
                         <!-- <strong>password</strong>: <%= user.local.password %> -->
                     </p>
-                <a href="/add" class="btn btn-default btn-sm pull-right">Add Blog</a>
+                </div>
+                
         </div>
     
 

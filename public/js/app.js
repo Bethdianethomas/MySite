@@ -63,7 +63,7 @@ var BlogList = React.createClass({
 
         return (
         <div>
-          <div className="container" id="blogTable">
+          <div className="container-fluid" id="blogTable">
             <div className="col-md-12">
               <h1 id="blogTitle">{blog.title}</h1>
                 <p><span className="badge">Posted: {blog.date}</span></p>

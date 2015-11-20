@@ -1,11 +1,7 @@
 .mySite {
     background-color: black;
 }
-/*.col-md-12 {
-	background-color: #FFFFFF;
-	height: 5px;
-	background-color: #white;
-}*/
+
 .row{
 	background-position: center;
 }
@@ -32,7 +28,6 @@
 	width: 250px;
 	margin-left: 50px;
 }
-
 
 #profileInfo{
 	color: black;
@@ -100,12 +95,13 @@
 #blogTable{
   height: 50%;
   width: 80%;
-  border: 5px solid #696969;
+  border: 5px solid #FFE700;
   border-radius: 5px;
   position: relative;
   margin-bottom: 25px;
   vertical-align: center;
   margin-top: 20px;
+  margin-left: 75px;
   background-color: white;
   text-align: justify;
 }
@@ -224,3 +220,48 @@ div#try {
 }
 
 
+
+.fa{
+	font-size:24px;
+	margin-right:5px;
+	text-align: left;
+}
+.fa-envelope{
+	color: white;
+}
+
+.row-first{
+	margin-bottom:10px;
+	margin-top:8px
+}
+
+.title-contact{
+	margin-top:32px;
+	display:none;
+}
+/*.contact-email { display:none; }*/
+
+a {transition:
+	all .3s ease;
+	-webkit-transition:all .3s ease;
+	-moz-transition:all .3s ease;
+	-o-transition:all .3s ease
+}
+.quick-contact{
+	color:#fff;
+	background-color:#000;
+}
+.contact a{-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	-o-border-radius:2px;
+	border-radius:2px;
+	font-size:20px;
+	text-align:left;
+	color:#FFE700;
+	}
+
+.contact a:hover{background-color:#FFE700;text-decoration:none}
+.contact a.skype:hover,.fa-skype{color:#00aff0}
+.contact a.google:hover,.fa-google-plus{color:white}
+.contact a.linkedin:hover,.fa-linkedin{color:#0e76a8}
+.contact a.twitter:hover,.fa-twitter{color:#00acee}
