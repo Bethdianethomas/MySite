@@ -2,9 +2,13 @@ var Github = React.createClass({
 	render: function() {
 		var gitStuff = this.props.data.map(function(commits){
 		return (
-			<div className="col-md-4">
-				<h3 id="repo"> Repo Name </h3>
-				<p>{commits.repo}</p>
+			<div>
+				<h4>Repository: {commits.repo} </h4>
+				<p> 
+				</p>
+	
+				<h5>Last Submit: {commits.timestamp} </h5>
+				<br/>
 			</div>
 			)
 		});

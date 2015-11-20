@@ -1,11 +1,11 @@
 .mySite {
     background-color: black;
 }
-.col-md-12 {
-	/*background-color: #FFFFFF;*/
+/*.col-md-12 {
+	background-color: #FFFFFF;
 	height: 5px;
 	background-color: #white;
-}
+}*/
 .row{
 	background-position: center;
 }
@@ -102,10 +102,16 @@
   width: 80%;
   border: 5px solid #696969;
   border-radius: 5px;
+  position: relative;
   margin-bottom: 25px;
   vertical-align: center;
   margin-top: 20px;
   background-color: white;
+  text-align: justify;
+}
+#blogTitle{
+	text-align: left;
+	padding-left: 0;
 }
 #comment{
 	width: 80%;
@@ -168,8 +174,10 @@ div#try {
 	padding: 15px 15px;
 }
 
-h1{
-	margin: 50px 50px 50px 50px;
+#addComment{
+	height: 40%;
+	width: 80%;
+
 }
 
 #leftFirstContent{

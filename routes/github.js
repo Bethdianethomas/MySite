@@ -8,7 +8,7 @@ fetchGithubEvents = function(req, res){
 	console.log('going inside')
 	axios.get(url)
 	  .then(function (response) {
-	  	var myEvents = response.data.slice(0,2).map(function(g){
+	  	var myEvents = response.data.slice(0,3).map(function(g){
 	  		return{
 	  			"id": g.id,
 				"type": g.type,

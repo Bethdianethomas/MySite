@@ -10,8 +10,6 @@ var BlogComment = React.createClass({
           return;
          }
 
-
-
         var blogId = this.props.blogId;
         console.log("BLOG ID IS: ", blogId)
 
@@ -36,17 +34,15 @@ var BlogComment = React.createClass({
 
       render: function(){
         return(
-            <form id="addComment">
-              <div className="form-group">
-                <div className="col-md-10 col-sm-6 col-xs-6">
-                <label className="col-md-10 col-sm-6 col-xs-6" htmlFor="comment">Comment</label>
-                  </div>
-                  <input type="text" ref="comment" className="form-control col-md-10 col-sm-6 col-xs-6" id="comment" maxlength="200" placeholder="Add your comments for this post"/>
-                   <div className="col-md-10 col-sm-6 col-xs-6">
-                    <button onClick={this.handleCommentSubmit}  type="submit" className="btn btn-primary" id="commentSubmit">Submit</button>
-                  </div>
+            <div className=" container-fluid col-md-10 col-sm-6 col-xs-6" id="addComment">
+              <div className="form-group"> 
+                <form>
+                <label htmlFor="comment">Comment</label>
+                  <input type="text" ref="comment" className="form-control"id="comment" maxlength="200" placeholder="Add your comments for this post"/>
+                    <button onClick={this.handleCommentSubmit}  type="submit" className="btn btn-primary" id="commentSubmit">Submit</button>  
+                </form>
               </div>
-            </form>
+            </div>
           );
       }
 
@@ -67,21 +63,21 @@ var BlogList = React.createClass({
 
         return (
         <div>
-          <div className="container-fluid" id="blogTable">
-            <div>
-              <p>{blog.title}</p>
-              <p>{blog.body}</p>
-              <p>{comments}</p>
-              <p>
-                <BlogComment blogId={blog._id}  />
-              </p>
+          <div className="container" id="blogTable">
+            <div className="col-md-12">
+              <h1 id="blogTitle">{blog.title}</h1>
+                <p><span className="badge">Posted: {blog.date}</span></p>
+                <p>{blog.body}</p>
+                <p>{comments}</p>
             </div>
-          </div>
-        </div>
+            <div>
+              <BlogComment blogId={blog._id}  />
+            </div>
+        </div>         
+      </div>
       )
-    });
+    }).reverse();
         
-
         return (
         <div>
           <h1> </h1>
