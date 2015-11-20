@@ -1,14 +1,80 @@
+var BlogComment = React.createClass({
+      handleCommentSubmit: function(e){
+        e.preventDefault();
+        console.log("handleCommentSubmit triggered")
+
+        var comment = this.refs.comment.getDOMNode().value;
+        console.log("COMMENT IS ", comment)
+
+          if(!comment){
+          return;
+         }
+
+
+
+        var blogId = this.props.blogId;
+        console.log("BLOG ID IS: ", blogId)
+
+        var data = ({comment: comment});
+
+        $.ajax({
+          url: '/api/blogs/'+blogId+'/comment',
+          dataType: 'json',
+          data: data,
+          type: 'POST',
+            success: function(data){
+              console.log("comment success", data)
+              document.location='/blog'
+              }.bind(this),
+            error: function(xhr, status, err) {
+              console.log("not posting comment")
+              console.error(status, err.toString());
+          }.bind(this)
+        })
+        this.refs.comment.getDOMNode().value= ''
+      },
+
+      render: function(){
+        return(
+            <form id="addComment">
+              <div className="form-group">
+                <div className="col-md-10 col-sm-6 col-xs-6">
+                <label className="col-md-10 col-sm-6 col-xs-6" htmlFor="comment">Comment</label>
+                  </div>
+                  <input type="text" ref="comment" className="form-control col-md-10 col-sm-6 col-xs-6" id="comment" maxlength="200" placeholder="Add your comments for this post"/>
+                   <div className="col-md-10 col-sm-6 col-xs-6">
+                    <button onClick={this.handleCommentSubmit}  type="submit" className="btn btn-primary" id="commentSubmit">Submit</button>
+                  </div>
+              </div>
+            </form>
+          );
+      }
+
+});
+
 var BlogList = React.createClass({
     render: function() {
       
       var blogData = this.props.data.map(function(blog){
+        if(blog.comments.length > 0){
+          var comments = blog.comments.map(function(c){
+            return ( <p> {c.body} </p>
+            )
+          })
+        } else {
+          var comments = "no comments yet..."
+        }
+
         return (
         <div>
           <div className="container-fluid" id="blogTable">
-            <div className="media col-md-3 col-sm-4 col-xs-6">
+            <div>
               <p>{blog.title}</p>
               <p>{blog.body}</p>
-              <p>{blog.comments}</p>
+              <p>{comments}</p>
+              <p>
+                <BlogComment blogId={blog._id}  />
+              </p>
             </div>
           </div>
         </div>
@@ -26,6 +92,10 @@ var BlogList = React.createClass({
           );
     }
 });
+
+
+
+                
 
 var BlogBox = React.createClass({
 
@@ -65,26 +135,6 @@ var BlogBox = React.createClass({
           );
     }
 });
-
-// var BlogList = React.createClass({
-//     render: function() {
-      
-//       var blogData = this.props.data.map(function(blog){
-//         return (<li><p> {blog.title} </p>
-//                  <p>{blog.body} </p></li>
-//                 );
-//       });
-
-//         return (
-//         <div>
-//           <h1> </h1>
-//             <ul>
-//               {blogData}
-//             </ul>
-//         </div>
-//           );
-//     }
-// });
 
 
 

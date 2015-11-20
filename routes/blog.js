@@ -53,7 +53,7 @@ router.route('/')
    .get(function(req, res) {
        mongoose.model('Blog').findById({
            _id: req.params.id
-       }, function(err, blog) {
+       }).populate('comments').exec(function(err, blog) {
            if (err)
                res.send(err);
 
@@ -95,7 +95,7 @@ router.route('/')
     .post(function(req,res){
 
       mongoose.model('Comment').create({
-        body: req.body.body,
+        body: req.body.comment,
         user: req.user
       
       }, function(err,comment){
@@ -109,6 +109,7 @@ router.route('/')
             res.send(err)
           blog.comments.push(comment._id);
           blog.save();
+          console.log("Creating new comment!! ", comment)
           res.send(comment);
         })
       })

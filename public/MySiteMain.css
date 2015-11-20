@@ -98,7 +98,7 @@
 	color: white;
 }
 #blogTable{
-  height: 30%;
+  height: 50%;
   width: 80%;
   border: 5px solid #696969;
   border-radius: 5px;
@@ -107,7 +107,13 @@
   margin-top: 20px;
   background-color: white;
 }
+#comment{
+	width: 80%;
+}
+#commentSubmit{
+	margin-top: 20px;
   }
+}
 #blogNav{
 	background-color: #000000;
 	height: 475px;
