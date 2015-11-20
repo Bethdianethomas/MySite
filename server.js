@@ -7,6 +7,7 @@ var db = require('./model/db');
 var blogModel = require('./model/blog');
 var blogRoutes = require('./routes/blog');
 var githubRoutes = require('./routes/github');
+var commentModel = require('./model/comment');
 var passport = require('passport');
 var flash    = require('connect-flash');
 var morgan       = require('morgan');

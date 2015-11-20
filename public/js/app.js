@@ -9,6 +9,8 @@ var BlogList = React.createClass({
               <a className="thumbnail" id="farmStand">
                 <img src={blog.img}/>
               </a>
+              <p>{blog.title}</p>
+              <p>{blog.body}</p>
             </div>
           </div>
         </div>

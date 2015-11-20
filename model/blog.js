@@ -4,7 +4,8 @@ var Schema = mongoose.Schema;
 var BlogSchema = new Schema({
 	title: String,
 	body: String,
-	img: String
+	img: String,
+	comments:[{type: mongoose.Schema.Types.ObjectId, ref:'Comment'}],
 
 });
 
