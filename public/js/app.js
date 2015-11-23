@@ -74,7 +74,7 @@ var BlogList = React.createClass({
                 <p>{comments}</p>
             </div>
             <div>
-              <BlogComment blogId={blog._id} onPost{self.props.newData}  />
+              <BlogComment blogId={blog._id} onPost={self.props.newData}  />
             </div>
         </div>         
       </div>
@@ -130,7 +130,7 @@ var BlogBox = React.createClass({
         var doRefresh = function(){
           self.loadBlogsFromServer()
         }
-        
+
         return (
         <div>
             <ul>
