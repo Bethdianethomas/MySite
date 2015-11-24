@@ -15,12 +15,13 @@ function filterByTitle(obj) {
  }
 };
 
+
 router.route('/')
 
 /* GET All Blogs */
  .get(function(req, res) {
    mongoose.model('Blog').find({})
-   .populate('comments')
+   .populate({ path:'comments', populate:{path:'user', select:'local.email local.username'}})
    .exec(function(err, blogs){
      if(err){
        return console.log(err);

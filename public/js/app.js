@@ -41,7 +41,7 @@ var BlogComment = React.createClass({
               <div className="form-group"> 
                 <form>
                 <label htmlFor="comment">Comment</label>
-                  <input type="text" ref="comment" className="form-control"id="comment" maxlength="200" placeholder="Add your comments for this post"/>
+                  <input type="text" ref="comment" className="form-control"id="comment" maxLength="200" placeholder="Add your comments for this post"/>
                     <button onClick={this.handleCommentSubmit}  type="submit" className="btn btn-primary" id="commentSubmit">Submit</button>  
                 </form>
               </div>
@@ -54,15 +54,19 @@ var BlogComment = React.createClass({
 var BlogList = React.createClass({
     render: function() {
       var self = this;
+
       var blogData = this.props.data.map(function(blog){
         if(blog.comments.length > 0){
           var comments = blog.comments.map(function(c){
+              
+
             return ( <p> {c.body} </p>
             )
           })
         } else {
-          var comments = "no comments yet..."
+          var comments = "No comments yet... Add One!"
         }
+
 
         return (
         <div>
@@ -70,12 +74,18 @@ var BlogList = React.createClass({
             <div className="col-md-12">
               <h1 id="blogTitle">{blog.title}</h1>
                 <p><span className="badge">Posted: {blog.date}</span></p>
+                <p>{blog.comments.email}</p>
                 <p>{blog.body}</p>
-                <p>{comments}</p>
+
             </div>
-            <div>
+            <div className="col-md-12">
               <BlogComment blogId={blog._id} onPost={self.props.newData}  />
             </div>
+            <div>
+             <p>{comments}</p>
+            </div>
+            
+            
         </div>         
       </div>
       )

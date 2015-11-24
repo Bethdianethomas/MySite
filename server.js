@@ -39,6 +39,7 @@ require('./routes/userRoutes.js')(app, passport);
 app.use('/api/blogs', blogRoutes);
 app.use('/api/github', githubRoutes);
 
+
 app.get('/', function(req, res){
     res.readFile('index.html');
 });
