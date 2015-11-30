@@ -2,7 +2,7 @@ var Github = React.createClass({
 	render: function() {
 		var gitStuff = this.props.data.map(function(commits){
 		return (
-			<div>
+			<div id="githubInfo">
 				<h3>{commits.type}</h3>
 				<h4>Date: {commits.timestamp.slice(0,10)} </h4>
 				<h5>Repository: {commits.repo} </h5>

@@ -37,7 +37,7 @@ var BlogComment = React.createClass({
 
       render: function(){
         return(
-            <div className=" container-fluid col-md-10 col-sm-6 col-xs-6" id="addComment">
+            <div className=" container-fluid col-md-12 commentsBox">
               <div className="form-group"> 
                 <form>
                 <label htmlFor="comment">Comment</label>
@@ -63,11 +63,12 @@ var BlogList = React.createClass({
             )
           })
         } else {
-          var comments = "No comments yet... Add One!"
+          var comments = ""
         }
 
 
         return (
+         <div>
         <div>
           <div className="container-fluid" id="blogTable">
             <div className="col-md-12">
@@ -75,27 +76,24 @@ var BlogList = React.createClass({
                 <p><span className="badge">Posted: {blog.date.slice(0,10)}</span></p>
                 <p>{blog.comments.email}</p>
                 <p>{blog.body}</p>
+                <p>Comments</p>
+                <p>{comments}</p>
 
             </div>
-            <div className="col-md-12">
+          </div>    
+          <div>
+          <div className="col-md-12 commentsBox">
               <BlogComment blogId={blog._id} onPost={self.props.newData}  />
             </div>
-            <div>
-             <p>{comments}</p>
-            </div>
-            
-            
-        </div>         
+          </div> 
+        </div>   
       </div>
       )
     }).reverse();
         
         return (
-        <div>
-          <h1> </h1>
-            <ul>
+        <div className="commentsBox">
               {blogData}
-            </ul>
         </div>
           );
     }

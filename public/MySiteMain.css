@@ -46,12 +46,16 @@
 #github{
 	margin-top: 50px;
 }
+
+
 .projectsEducation{
 	background-color: white;
 	padding: 25px 25px;
 	margin: 25px 25px;
 	border: 5px solid #FFE700;
 	border-radius: 10px;
+	overflow: hidden;
+    overflow-y: auto;
 }
 .projectsGithub{
 	background-color: white;
@@ -61,15 +65,12 @@
 	border-radius: 10px;
 	width: 95%;
 	height: 480px;
+	overflow: hidden;
+    overflow-y: auto;
 }
 
 .courses{
 	font-weight: bold;
-}
-
-
-#bioFirstContainer{
-	margin: auto;
 }
 
 
@@ -114,21 +115,30 @@
 	color: white;
 }
 #blogTable{
-  height: 80%;
+  height: 50%;
   width: 80%;
-  border: 5px solid #FFE700;
-  border-radius: 5px;
-  position: relative;
-  margin-bottom: 25px;
-  vertical-align: center;
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
+  /*border-radius: 5px;*/
   margin-top: 20px;
   margin-left: 75px;
   background-color: white;
   text-align: justify;
+  overflow: hidden;
+  overflow-y: auto;
 }
 #blogTitle{
 	text-align: left;
 	padding-left: 0;
+}
+.commentsBox{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+  	margin-bottom: 10px;
+  	vertical-align: center;
+  	margin-left: 25px;
+
 }
 #comment{
 	width: 80%;
@@ -191,11 +201,11 @@ div#try {
 	padding: 15px 15px;
 }
 
-#addComment{
+/*#addComment{
 	height: 40%;
 	width: 80%;
 
-}
+}*/
 
 #leftFirstContent{
 	background-color: #FF5050;
