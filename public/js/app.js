@@ -58,7 +58,6 @@ var BlogList = React.createClass({
       var blogData = this.props.data.map(function(blog){
         if(blog.comments.length > 0){
           var comments = blog.comments.map(function(c){
-              
 
             return ( <p> {c.body} </p>
             )
