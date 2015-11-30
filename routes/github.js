@@ -5,10 +5,10 @@ var axios = require('axios');
 var url = "https://api.github.com/users/bethdianethomas/events";
 
 fetchGithubEvents = function(req, res){
-	console.log('going inside')
+	console.log('going inside the github events')
 	axios.get(url)
 	  .then(function (response) {
-	  	var myEvents = response.data.slice(0,3).map(function(g){
+	  	var myEvents = response.data.slice(0,2).map(function(g){
 	  		return{
 	  			"id": g.id,
 				"type": g.type,

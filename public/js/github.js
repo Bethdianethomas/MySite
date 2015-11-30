@@ -3,11 +3,9 @@ var Github = React.createClass({
 		var gitStuff = this.props.data.map(function(commits){
 		return (
 			<div>
-				<h4>Repository: {commits.repo} </h4>
-				<p> 
-				</p>
-	
-				<h5>Last Submit: {commits.timestamp} </h5>
+				<h3>{commits.type}</h3>
+				<h4>Date: {commits.timestamp.slice(0,10)} </h4>
+				<h5>Repository: {commits.repo} </h5>
 				<br/>
 			</div>
 			)
@@ -27,7 +25,6 @@ var GitBox = React.createClass({
 	getInitialState: function(){
 		return{data: []};
 	},
-
 	loadGitData: function(){
 		$.ajax({
 			url: this.props.url,
