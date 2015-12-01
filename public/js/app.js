@@ -40,7 +40,7 @@ var BlogComment = React.createClass({
             <div className=" container-fluid col-md-12 commentsBox">
               <div className="form-group"> 
                 <form>
-                <label htmlFor="comment">Comment</label>
+                <label htmlFor="comment">Add Your Comment</label>
                   <input type="text" ref="comment" className="form-control"id="comment" maxLength="200" placeholder="Add your comments for this post"/>
                     <button onClick={this.handleCommentSubmit}  type="submit" className="btn btn-primary" id="commentSubmit">Submit</button>  
                 </form>
