@@ -124,8 +124,7 @@
   width: 80%;
   border: 5px solid black;
   border-radius: 5px;
-  margin-top: 20px;
-  margin-left: 75px;
+  margin: 25px auto;
   background-color: white;
   vertical-align: center;
   text-align: justify;
