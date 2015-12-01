@@ -16,18 +16,23 @@
 	height: 350px;
 	width: 100%;
 	margin-top: 100px;
+
 }
 
 #profileDiv{
-	background-color: #FFE700;
+	background: url("bioJumbotron.png");
 	margin-top: 70px;
-	height: 400px;
+	height: 450px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 #profilePic {
 	height: 250px;
 	width: 250px;
 	margin-left: 50px;
+	opacity: 100;
 }
 
 #profileInfo{
@@ -228,7 +233,7 @@ div#try {
 	color: white;
 }
 
-#loginForm{
+.loginForm{
 	border: 2px solid white;
 	padding: 25px;
 	border-radius: 5px;
@@ -260,6 +265,13 @@ div#try {
 .fa-envelope{
 	color: white;
 }
+.fa-linkedin{
+	color:#0e76a8;
+}
+
+.fa-twitter{
+	color:#00acee;
+}
 
 .row-first{
 	margin-bottom:10px;
@@ -288,11 +300,11 @@ a {transition:
 	border-radius:2px;
 	font-size:20px;
 	text-align:left;
-	color:#FFE700;
+	color:black;
 	}
 
 .contact a:hover{background-color:#FFE700;text-decoration:none}
 .contact a.skype:hover,.fa-skype{color:#00aff0}
 .contact a.google:hover,.fa-google-plus{color:white}
-.contact a.linkedin:hover,.fa-linkedin{color:#0e76a8}
-.contact a.twitter:hover,.fa-twitter{color:#00acee}
+.contact a.linkedin:hover{color:white}
+.contact a.twitter:hover{color:white}
