@@ -28,17 +28,42 @@
 	background-size: 100%;
 }
 
+#aboutMe{
+	color: black;
+	font-size: 3em;
+	margin-left: 75px;
+	margin-top: 50px;
+}
+
+#journey{
+	color: black;
+	margin-left: 75px;
+}
+
 #profilePic {
 	height: 250px;
 	width: 250px;
-	margin-left: 50px;
-	opacity: 100;
+	/*margin-left: 25px;*/
+	margin-top: 25px;
+
+}
+#intro{
+	color: white;
+	margin-top: 25px;
+	font-size: 1.5em;
+	text-align: center;
+
 }
 
 #profileInfo{
-	color: black;
+	color: white;
 	padding-top: 0;
 	margin-top: 0;
+	background-color: black;
+	border: none;
+	padding-top: 100px;
+	bottom: 0;
+	
 }
 
 #experience{
@@ -264,19 +289,12 @@ div#try {
 
 
 .fa{
-	font-size:24px;
-	margin-right:5px;
-	text-align: left;
+	font-size:40px;
+	margin-right:10px;
+	color: #FFE700;
 }
-.fa-envelope{
-	color: white;
-}
-.fa-linkedin{
-	color:#0e76a8;
-}
-
-.fa-twitter{
-	color:#00acee;
+.fa:hover {
+	color:hotpink;
 }
 
 .row-first{
@@ -311,6 +329,6 @@ a {transition:
 
 .contact a:hover{background-color:#FFE700;text-decoration:none}
 .contact a.skype:hover,.fa-skype{color:#00aff0}
-.contact a.google:hover,.fa-google-plus{color:white}
+
 .contact a.linkedin:hover{color:white}
 .contact a.twitter:hover{color:white}
