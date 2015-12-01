@@ -73,11 +73,10 @@ var BlogList = React.createClass({
             <div className="col-md-12">
               <h1 id="blogTitle">{blog.title}</h1>
               <hr />
-                <p><span className="badge">Posted: {blog.date.slice(0,10)}</span></p>
+                <p><span className="label label-warning">Posted: {blog.date.slice(0,10)}</span></p>
                 <p>{blog.comments.email}</p>
                 <p>{blog.body}</p>
-                <hr />
-                <p>Comments</p>
+                <p id="blogComments">Comments</p>
                 <p>{comments}</p>
 
             </div>

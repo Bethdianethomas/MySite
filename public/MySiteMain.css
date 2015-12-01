@@ -249,6 +249,11 @@ div#try {
 	background-color: #FF5050;
 	background-size: 80px 60px;
 }
+#blogComments{
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-top: 25px;
+}
 
 #secondRow {
 	margin-top: 50px;
