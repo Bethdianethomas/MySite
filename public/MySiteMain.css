@@ -161,6 +161,7 @@
   opacity: 0.95;
   overflow: hidden;
   overflow-y: auto;
+  font-family: 'Raleway', sans-serif;
 }
 #blogTitle{
 	text-align: left;
