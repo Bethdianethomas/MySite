@@ -141,13 +141,13 @@
 	width: 100%;
 	margin-top: 10px;
   	margin-bottom: 10px;
-  	vertical-align: center;
-  	margin-left: 25px;
+  	vertical-align: left;
+  	/*margin-left: 25px;*/
 
 }
-#comment{
-	width: 80%;
-}
+/*#comment{
+	width: 1090px;
+}*/
 #commentSubmit{
 	margin-top: 20px;
   }
@@ -181,6 +181,13 @@ div#try {
 	margin-left: 5px;
 	height: 3em;
 	width: 13em;  
+}
+
+#blogBackground{
+	background: url(blogBackground.png);
+	/*background-size: 100%;*/
+	/*background-color: black;*/
+	
 }
 
 .navbar-default {

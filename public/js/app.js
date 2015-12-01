@@ -68,8 +68,7 @@ var BlogList = React.createClass({
 
 
         return (
-         <div>
-        <div>
+          <div>
           <div className="container-fluid" id="blogTable">
             <div className="col-md-12">
               <h1 id="blogTitle">{blog.title}</h1>
@@ -80,14 +79,11 @@ var BlogList = React.createClass({
                 <p>{comments}</p>
 
             </div>
-          </div>    
-          <div>
-          <div className="col-md-12 commentsBox">
+            <div className="col-md-12 commentsBox">
               <BlogComment blogId={blog._id} onPost={self.props.newData}  />
             </div>
+            </div>
           </div> 
-        </div>   
-      </div>
       )
     }).reverse();
         
