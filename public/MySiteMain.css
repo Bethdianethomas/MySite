@@ -298,11 +298,22 @@ div#try {
 .fa:hover {
 	color:hotpink;
 }
+#bioButton:hover {
+	color:hotpink;
+}
 
 .row-first{
 	margin-bottom:10px;
 	margin-top:8px
 }
+hr { 
+	display: block;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid black;
+    margin: .5em 0;
+    padding: 0; }
 
 .title-contact{
 	margin-top:32px;
