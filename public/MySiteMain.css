@@ -1,19 +1,13 @@
-.mySite {
-     background: url(javastreetBackground.png) repeat 0 0;
-}
-
 * {
 	font-family: 'Raleway', sans-serif;
 }
 
-.row{
-	background-position: center;
+.mySite {
+     background: url(javastreetBackground.png) repeat 0 0;
 }
-#javaStreetPic {
-	background: url(JavaStreetNew.png);
-	height: 460px;
-	width: 460px;
-	margin-top: 0;
+
+.row {
+	background-position: center;
 }
 
 .jumbotron {
@@ -23,7 +17,25 @@
 
 }
 
-#profileDiv{
+hr { 
+	display: block;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid black;
+    margin: .5em 0;
+    padding: 0; 
+}
+
+
+#javaStreetPic {
+	background: url(JavaStreetNew.png);
+	height: 460px;
+	width: 460px;
+	margin-top: 0;
+}
+
+#profileDiv {
 	background: url("bioJumbotron.png");
 	margin-top: 70px;
 	height: 450px;
@@ -32,45 +44,33 @@
 	background-size: 100%;
 }
 
-#aboutMe{
+#profilePic {
+	height: 250px;
+	width: 250px;
+	margin-top: 25px;
+}
+
+#aboutMe {
 	color: black;
 	font-size: 3em;
 	margin-left: 75px;
 	margin-top: 50px;
 }
 
-#journey{
+#journey {
 	color: black;
 	margin-left: 75px;
 }
 
-#profilePic {
-	height: 250px;
-	width: 250px;
-	/*margin-left: 25px;*/
-	margin-top: 25px;
 
-}
-#intro{
+#intro {
 	color: white;
 	margin-top: 25px;
 	font-size: 1.5em;
 	text-align: center;
-
 }
 
-#profileInfo{
-	color: white;
-	padding-top: 0;
-	margin-top: 0;
-	background-color: black;
-	border: none;
-	padding-top: 100px;
-	bottom: 0;
-	
-}
-
-#experience{
+#experience {
 	height: 2000px;
 	width: 100%;
 	padding-bottom: 50px;
@@ -78,12 +78,11 @@
 	margin-top: 25px;
 }
 
-#github{
+#github {
 	margin-top: 50px;
 }
 
-
-.projectsEducation{
+.projectsEducation {
 	background: url(white_wall.png) repeat 0 0;
 	padding: 25px 25px;
 	margin: 25px 25px;
@@ -92,7 +91,7 @@
 	overflow: hidden;
     overflow-y: auto;
 }
-.projectsGithub{
+.projectsGithub {
 	background: url(white_wall.png) repeat 0 0;
 	padding: 25px 25px;
 	margin: 25px 25px 25px 20px;
@@ -104,35 +103,39 @@
     overflow-y: auto;
 }
 
-.courses{
+.courses {
 	font-weight: bold;
 }
 
 
-.form-control{
+.form-control {
 	background-color: white;
 }
+
 #pageHeader {
 	margin-top: 50px;
 	margin-bottom: 20px;
 	background-color: #FFE700;
 	height: 525px;
 }
-#jumboLines{
+
+#jumboLines {
 	margin-top: 15px;
 	color: black;
 	text-align: right;
 }
+
 #drinkCoffee {
 	font-size: 34px;
 	font-weight: bold;
 }
 
-#blogList{
+#blogList {
 	margin-top: 100px;
 	height: 100%;
 }
-#blogAdded{
+
+#blogAdded {
 	margin-top: 150px;
 	background-color: black;
 	color: white;
@@ -146,10 +149,12 @@
 	padding-top: 10px;
 	font-size: 24px;
 }
-#blogInfo{
+
+#blogInfo {
 	color: white;
 }
-#blogTable{
+
+#blogTable {
   height: 70%;
   width: 80%;
   border: 5px solid black;
@@ -163,34 +168,33 @@
   overflow-y: auto;
   font-family: 'Raleway', sans-serif;
 }
-#blogTitle{
+
+#blogTitle {
 	text-align: left;
 	padding-left: 0;
 }
-.commentsBox{
+.commentsBox {
 	position: relative;
 	width: 100%;
 	margin-top: 10px;
   	margin-bottom: 10px;
   	vertical-align: center;
-  	/*margin-left: 25px;*/
-
 }
-/*#comment{
-	width: 1090px;
-}*/
+
 #commentSubmit{
 	margin-top: 20px;
-  }
 }
-#blogNav{
+
+#blogNav {
 	background-color: #000000;
 	height: 475px;
 	width: 332px;
 }
-#blogBody{
+
+#blogBody {
 	margin-bottom: 15px;
 }
+
 div#try {
 	background-color: #000000;	
 	height: 475px;
@@ -199,11 +203,9 @@ div#try {
 	margin-right: 40px;
 }
 
-#firstParagraph{
+#firstParagraph {
 	color: #FFFFFF;
 }
-
-
 
 #javaStreetNav {
 	background: url(JavaStreetRight.png);
@@ -214,11 +216,8 @@ div#try {
 	width: 13em;  
 }
 
-#blogBackground{
+#blogBackground {
 	background: url(blogBackground.png);
-	/*opacity: 0.1;*/
-	/*background-color: black;*/
-	
 }
 
 .navbar-default {
@@ -238,23 +237,18 @@ div#try {
 	margin-top: 10px;
 }
 
-#addBlog{
+#addBlog {
 	border: 2px solid white;
 	border-radius: 5px;
 	padding: 15px 15px;
 }
 
-/*#addComment{
-	height: 40%;
-	width: 80%;
-
-}*/
-
-#leftFirstContent{
+#leftFirstContent {
 	background-color: #FF5050;
 	background-size: 80px 60px;
 }
-#blogComments{
+
+#blogComments {
 	font-weight: bold;
 	font-size: 1.2em;
 	margin-top: 25px;
@@ -262,7 +256,6 @@ div#try {
 
 #secondRow {
 	margin-top: 50px;
-
 }
 
 #secondColumn {
@@ -276,11 +269,10 @@ div#try {
 	color: white;
 }
 
-.loginForm{
+.loginForm {
 	border: 2px solid white;
 	padding: 25px;
 	border-radius: 5px;
-
 }
 
 #bioButton{
@@ -290,7 +282,8 @@ div#try {
 	margin-top: 5px;
 	font-size: 16px;
 }
-#dropdown{
+
+#dropdown {
 	color: #FFFFFF;
 	height: 64px;
 	width: 125px;
@@ -298,60 +291,25 @@ div#try {
 	font-size: 16px;
 }
 
-
-
-.fa{
+.fa {
 	font-size:40px;
 	margin-right:10px;
 	color: #FFE700;
 }
+
 .fa:hover {
 	color:hotpink;
 }
+
 #bioButton:hover {
 	color:yellow;
 }
 
-.row-first{
+.row-first {
 	margin-bottom:10px;
 	margin-top:8px
 }
-hr { 
-	display: block;
-    height: 1px;
-    width: 100%;
-    border: 0;
-    border-top: 1px solid black;
-    margin: .5em 0;
-    padding: 0; }
 
-.title-contact{
-	margin-top:32px;
-	display:none;
-}
-/*.contact-email { display:none; }*/
 
-a {transition:
-	all .3s ease;
-	-webkit-transition:all .3s ease;
-	-moz-transition:all .3s ease;
-	-o-transition:all .3s ease
-}
-.quick-contact{
-	color:#fff;
-	background-color:#000;
-}
-.contact a{-webkit-border-radius:2px;
-	-moz-border-radius:2px;
-	-o-border-radius:2px;
-	border-radius:2px;
-	font-size:20px;
-	text-align:left;
-	color:black;
-	}
 
-.contact a:hover{background-color:#FFE700;text-decoration:none}
-.contact a.skype:hover,.fa-skype{color:#00aff0}
 
-.contact a.linkedin:hover{color:white}
-.contact a.twitter:hover{color:white}
